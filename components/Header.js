@@ -1,7 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-import { HiOutlineSearch } from "react-icons/hi";
+import { HiOutlineSearch, HiOutlineHome } from "react-icons/hi";
+import { RiFlag2Line } from "react-icons/ri";
+import { MdOutlineOndemandVideo } from "react-icons/md";
+import { AiOutlineShop } from "react-icons/ai";
+import { IoGameControllerOutline } from "react-icons/io5";
+
 const Header = () => {
   return (
     <div className="bg-white flex items-center p-2 shadow-md top-0 z-50 sticky h-16">
@@ -25,7 +30,29 @@ const Header = () => {
       {/* Left end */}
 
       {/* center start*/}
+      <div className="flex flex-grow justify-center m-2">
+        <div className="flex items-center">
+          <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
+            <HiOutlineHome className="mx-auto" size={25} />
+          </div>
 
+          <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
+            <RiFlag2Line className="mx-auto" size={25} />
+          </div>
+
+          <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
+            <MdOutlineOndemandVideo className="mx-auto" size={25} />
+          </div>
+
+          <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
+            <AiOutlineShop className="mx-auto" size={25} />
+          </div>
+
+          <div className="flex items-center h-14 px-4 md:px-10 rounded-md md:hover:bg-gray-100 cursor-pointer">
+            <IoGameControllerOutline className="mx-auto" size={25} />
+          </div>
+        </div>
+      </div>
       {/* center start*/}
 
       {/* right start */}
