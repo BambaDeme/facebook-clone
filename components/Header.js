@@ -3,9 +3,11 @@ import React from "react";
 
 import { HiOutlineSearch, HiOutlineHome } from "react-icons/hi";
 import { RiFlag2Line } from "react-icons/ri";
-import { MdOutlineOndemandVideo } from "react-icons/md";
-import { AiOutlineShop } from "react-icons/ai";
+import { MdOutlineOndemandVideo, MdOutlineExpandMore } from "react-icons/md";
+import { AiOutlineShop, AiFillMessage, AiFillBell } from "react-icons/ai";
 import { IoGameControllerOutline } from "react-icons/io5";
+
+import { CgMenuGridO } from "react-icons/cg";
 
 const Header = () => {
   return (
@@ -53,10 +55,40 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {/* center start*/}
+      {/* center end*/}
 
       {/* right start */}
-      {/* right start */}
+      <div className="flex items-center justify-end min-w-fit space-x-2">
+        <Image
+          src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+          height={40}
+          width={40}
+        />
+        <p className="hidden xl:inline-flex font-semibold text-sm whitespace-nowrap p-3 max-w-xs">
+          Bamba Deme
+        </p>
+
+        <CgMenuGridO
+          size={20}
+          className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+        />
+
+        <AiFillMessage
+          size={20}
+          className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+        />
+
+        <AiFillBell
+          size={20}
+          className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+        />
+
+        <MdOutlineExpandMore
+          size={20}
+          className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+        />
+      </div>
+      {/* right end */}
     </div>
   );
 };
